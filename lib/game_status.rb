@@ -15,12 +15,22 @@ def full?(board)
 end
 
 def draw?(board)
-  if won?(board)==nil
+  if won?(board)==nil and full?(board)
     return true
   end
   return false
 end
 
+def over?(board)
+  if full?(board)==true or won?(board)
+    return true
+  
+    
+end
+
+def winner(board)
+  
+end
 def won?(board)
   WIN_COMBINATIONS.each do |combinations|
     if board[combinations[0]]==board[combinations[1]] and board[combinations[2]] == board[combinations[1]] and board[combinations[1]] != " "
