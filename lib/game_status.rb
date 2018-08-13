@@ -18,6 +18,7 @@ def draw?(board)
   if won?(board)==nil
     return true
   end
+  return false
 end
 
 def won?(board)
