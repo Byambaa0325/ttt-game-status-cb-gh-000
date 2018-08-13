@@ -23,4 +23,5 @@ def won?(board)
       return combinations
     end
   end
+  return nil
 end
