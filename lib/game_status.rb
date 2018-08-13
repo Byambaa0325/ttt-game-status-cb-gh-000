@@ -31,8 +31,10 @@ end
 
 def winner(board)
   returned= won?(board)
-  if won?(board)!=nil
-    return bo
+  if returned!=nil
+    return board[returned[0]]
+  end
+  return nil
 end
 def won?(board)
   WIN_COMBINATIONS.each do |combinations|
