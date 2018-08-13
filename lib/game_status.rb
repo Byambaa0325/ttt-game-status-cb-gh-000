@@ -15,7 +15,7 @@ def full?(board)
 end
 
 def draw?(board)
-
+end
 
 def won?(board)
   WIN_COMBINATIONS.each do |combinations|
@@ -24,4 +24,5 @@ def won?(board)
     end
   end
   return nil
+
 end
