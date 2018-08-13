@@ -22,14 +22,17 @@ def draw?(board)
 end
 
 def over?(board)
-  if full?(board)==true or won?(board)
+  if full?(board) or won?(board) != nil
     return true
-  
+  end
+  return false
     
 end
 
 def winner(board)
-  
+  returned= won?(board)
+  if won?(board)!=nil
+    return bo
 end
 def won?(board)
   WIN_COMBINATIONS.each do |combinations|
