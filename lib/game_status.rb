@@ -11,7 +11,7 @@ WIN_COMBINATIONS = [
 ]
 
 def full?(board)
-  return !(board.any {|cell| cell==" "})
+  return !(board.any? {|cell| cell==" "})
 end
 
 def draw?(board)
