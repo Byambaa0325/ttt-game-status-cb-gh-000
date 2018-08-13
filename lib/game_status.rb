@@ -15,6 +15,9 @@ def full?(board)
 end
 
 def draw?(board)
+  if won?(board)==nil
+    return true
+  end
 end
 
 def won?(board)
