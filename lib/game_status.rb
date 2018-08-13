@@ -18,5 +18,9 @@ def draw?(board)
 
 
 def won?(board)
-  
+  WIN_COMBINATIONS.each do |combinations|
+    if board[combinations[0]]==board[combinations[1]] and board[combinations[2]] == board[combinations[1]] 
+      return combinations
+    end
+  end
 end
